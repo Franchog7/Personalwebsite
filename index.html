@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Girón — International Business Leader</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">FG</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Results</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-pre">Hello, I'm</p>
+      <h1 class="hero-name">Francisco<br /><span class="gold">Girón</span></h1>
+      <div class="hero-typewriter">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">10+ years driving cross-border growth across the U.S., Latin America &amp; Europe.</p>
+      <div class="hero-btns">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span>🌎 B2B Sales</span>
+        <span>📊 Revenue Operations</span>
+        <span>🚀 Project Management</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <div class="profile-img-placeholder">
+                <span class="profile-initials">FG</span>
+              </div>
+              <div class="profile-ring"></div>
+            </div>
+            <h3 class="profile-name">Francisco Girón</h3>
+            <p class="profile-title">International Business Leader</p>
+            <div class="profile-contact">
+              <a href="tel:+573003700521" class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9 2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.09 6.09l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                +57 300 370 0521
+              </a>
+              <a href="mailto:francho714@gmail.com" class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+                francho714@gmail.com
+              </a>
+              <span class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Medellín, Colombia
+              </span>
+            </div>
+            <div class="profile-langs">
+              <div class="lang-item">
+                <span class="lang-name">Spanish</span>
+                <div class="lang-bar"><div class="lang-fill" style="--pct:100%"></div></div>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">English</span>
+                <div class="lang-bar"><div class="lang-fill" style="--pct:85%"></div></div>
+                <span class="lang-level">C1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Results-driven leader bridging<br /><span class="gold">strategy and execution</span></h2>
+          <p class="about-bio">
+            With over a decade of cross-border experience spanning <strong>B2B sales, revenue operations, project management, and insurance services</strong> across the U.S., Latin America, and Europe — I don't just build pipelines, I build systems that scale.
+          </p>
+          <p class="about-bio">
+            I combine CRM mastery, process automation, and consultative relationship-building to deliver outcomes that consistently exceed expectations. From leading 20-person teams to closing $700K+ seasonal revenue cycles — I operate with equal comfort at the strategic and frontline level.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num gold">10+</span>
+              <span class="highlight-label">Years Experience</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num gold">3</span>
+              <span class="highlight-label">Continents</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num gold">9</span>
+              <span class="highlight-label">Companies</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num gold">5</span>
+              <span class="highlight-label">Industries</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Key Results</div>
+        <h2 class="section-title">Numbers that<br /><span class="gold">tell the story</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">📈</div>
+          <div class="achievement-num counter" data-target="15">0</div>
+          <div class="achievement-unit">%</div>
+          <p class="achievement-label">Revenue increase delivered within 6 months at Farms Connect</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">💰</div>
+          <div class="achievement-num">$700K+</div>
+          <p class="achievement-label">In seasonal revenue driven during peak cycles (Valentine's Day &amp; Mother's Day)</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">👥</div>
+          <div class="achievement-num counter" data-target="20">0</div>
+          <div class="achievement-unit">+</div>
+          <p class="achievement-label">CSRs led as Customer Service Supervisor, reducing escalations company-wide</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🌎</div>
+          <div class="achievement-num">U.S. · LATAM · EU</div>
+          <p class="achievement-label">Cross-border markets served across 3 continents throughout career</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Career Journey</div>
+        <h2 class="section-title">Professional<br /><span class="gold">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">May 2025 – Feb 2026</span>
+              <span class="timeline-location">Remote, United States</span>
+            </div>
+            <h3 class="timeline-role">Business Development Representative</h3>
+            <p class="timeline-company">Marketing4MSPs</p>
+            <p class="timeline-desc">Drove new business pipeline for multiple MSP brands across the U.S. by executing targeted outreach strategies that combined consultative selling, CRM automation (GHL), and persona-based prospecting. Crafted value-driven messaging sequences and continuously refined pitch techniques through A/B evaluation — delivering measurable improvements in lead quality and pipeline conversion rates.</p>
+            <div class="timeline-tags">
+              <span>GHL CRM</span><span>B2B Sales</span><span>Lead Generation</span><span>A/B Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2025 – Apr 2025</span>
+              <span class="timeline-location">Remote, Boston, MA</span>
+            </div>
+            <h3 class="timeline-role">Senior Project Manager</h3>
+            <p class="timeline-company">QuickFlora Florist Software POS</p>
+            <p class="timeline-desc">Spearheaded end-to-end project delivery for a SaaS platform serving the floral industry, overseeing timelines, resource allocation, and cross-functional coordination across engineering, sales, and operations. Implemented structured governance frameworks that reduced bottlenecks and improved on-time delivery.</p>
+            <div class="timeline-tags">
+              <span>SaaS</span><span>Agile</span><span>Cross-functional</span><span>Governance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2024 – Jul 2024</span>
+              <span class="timeline-location">Remote, Miami, FL</span>
+            </div>
+            <h3 class="timeline-role">Chief of Operations</h3>
+            <p class="timeline-company">Farms Connect</p>
+            <div class="timeline-highlight">
+              <span>🏆 15% revenue increase in 6 months &nbsp;·&nbsp; $700K+ seasonal sales</span>
+            </div>
+            <p class="timeline-desc">Led end-to-end operations for a cross-border floral supply chain, overseeing procurement, logistics, and sales strategy. Engineered process improvements that delivered a 15% revenue increase within 6 months and drove $700K+ in sales during peak seasons. Standardized workflows and team KPIs, building operational resilience and sustained profitability.</p>
+            <div class="timeline-tags">
+              <span>Revenue Ops</span><span>Supply Chain</span><span>KPIs</span><span>Strategic Ops</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Mar 2023 – Sep 2023</span>
+              <span class="timeline-location">Remote, United States</span>
+            </div>
+            <h3 class="timeline-role">Project Executive Lead</h3>
+            <p class="timeline-company">Trust Solar US</p>
+            <p class="timeline-desc">Orchestrated complex, multi-stakeholder project execution for a renewable energy firm, managing timelines, consultant communications, and milestone tracking. Established structured reporting cadences that improved executive visibility and accelerated decision-making, ensuring all projects were delivered on scope and on time.</p>
+            <div class="timeline-tags">
+              <span>Renewable Energy</span><span>Stakeholder Mgmt</span><span>Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Nov 2022 – Feb 2023</span>
+              <span class="timeline-location">Remote, Denmark</span>
+            </div>
+            <h3 class="timeline-role">Media Relations Assistant</h3>
+            <p class="timeline-company">Bazoom Group</p>
+            <p class="timeline-desc">Delivered data-driven insights on email campaign performance directly to the CEO, keeping initiatives aligned with strategic marketing objectives. Built structured KPI tracking systems that improved reporting accuracy and enabled faster course corrections across active campaigns.</p>
+            <div class="timeline-tags">
+              <span>Media Relations</span><span>KPI Tracking</span><span>Email Campaigns</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Apr 2021 – Jun 2022</span>
+              <span class="timeline-location">Remote, United States</span>
+            </div>
+            <h3 class="timeline-role">Procurement Specialist</h3>
+            <p class="timeline-company">Pronto Farms LLC</p>
+            <p class="timeline-desc">Managed sourcing and purchasing of premium floral products from Latin American farms, leveraging deep regional market knowledge to secure competitive pricing without compromising quality. Cultivated strategic supplier relationships and used Salesforce and Komet Sales to maintain procurement data integrity and drive cost optimisation.</p>
+            <div class="timeline-tags">
+              <span>Procurement</span><span>Salesforce</span><span>Komet Sales</span><span>LATAM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Apr 2018 – Apr 2021</span>
+              <span class="timeline-location">On-site, Medellín, Colombia</span>
+            </div>
+            <h3 class="timeline-role">Customer Support Specialist</h3>
+            <p class="timeline-company">Komet Sales</p>
+            <p class="timeline-desc">Delivered high-quality technical and operational support across the full floral value chain — resolving thousands of cases for importers, wholesalers, retailers, and florists. Leveraged Salesforce and Koronet expertise to reduce resolution times and consistently earned recognition for deep product knowledge and long-term client relationships.</p>
+            <div class="timeline-tags">
+              <span>Salesforce</span><span>Technical Support</span><span>Client Relations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Feb 2016 – Apr 2018</span>
+              <span class="timeline-location">On-site, Medellín, Colombia</span>
+            </div>
+            <h3 class="timeline-role">Customer Service Supervisor</h3>
+            <p class="timeline-company">Webhelp OneLink BPO</p>
+            <p class="timeline-desc">Directed a team of 20 CSRs supporting the Fitbit trackers account, driving performance through targeted coaching, product training, and structured feedback loops. Implemented KPI scorecards aligned with BPO excellence standards, reducing escalations and improving first-contact resolution.</p>
+            <div class="timeline-tags">
+              <span>Team Leadership</span><span>BPO</span><span>KPI Scorecards</span><span>Fitbit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2014 – 2015</span>
+              <span class="timeline-location">United States</span>
+            </div>
+            <h3 class="timeline-role">Insurance Agent</h3>
+            <p class="timeline-company">FINO Services LLC</p>
+            <p class="timeline-desc">Began in Commercial Auto Insurance, advising truck drivers on policy selection, managing compliance with state requirements, and providing ongoing client support. Expanded into Personal Insurance lines — Auto, Home, Life, and Healthcare — developing tailored coverage solutions in partnership with carriers including Progressive. Built a strong referral-based client portfolio by prioritising long-term relationships and service quality.</p>
+            <div class="timeline-tags">
+              <span>Insurance</span><span>Client Advisory</span><span>Progressive</span><span>Compliance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Capabilities</div>
+        <h2 class="section-title">Skills &amp;<br /><span class="gold">Tools</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">💼</span> Core Skills
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary">B2B Sales &amp; Lead Generation</span>
+            <span class="skill-tag skill-primary">Revenue Operations</span>
+            <span class="skill-tag skill-primary">Project Management (Agile/Scrum)</span>
+            <span class="skill-tag skill-primary">Cross-functional Leadership</span>
+            <span class="skill-tag">Strategic Procurement</span>
+            <span class="skill-tag">Process Automation &amp; Workflows</span>
+            <span class="skill-tag">Stakeholder Communication</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🛠️</span> CRM &amp; Platforms
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary">Salesforce</span>
+            <span class="skill-tag skill-primary">GHL (GoHighLevel)</span>
+            <span class="skill-tag skill-primary">Zoho CRM</span>
+            <span class="skill-tag">Komet Sales</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">Notion</span>
+            <span class="skill-tag">Asana</span>
+            <span class="skill-tag">Trello</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🤖</span> AI Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary">Claude</span>
+            <span class="skill-tag skill-primary">ChatGPT</span>
+            <span class="skill-tag skill-primary">Gemini</span>
+            <span class="skill-tag skill-primary">R.I.C.O Prompting</span>
+            <span class="skill-tag">Basic GitHub</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">💻</span> Tech &amp; Productivity
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML · CSS</span>
+            <span class="skill-tag">VSCode</span>
+            <span class="skill-tag">Google Suite</span>
+            <span class="skill-tag">Microsoft Suite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education &amp;<br /><span class="gold">Certifications</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-year">2009 – 2013</div>
+          <div class="edu-icon">🎓</div>
+          <h3 class="edu-degree">B.Sc. International Business</h3>
+          <p class="edu-school">Alejandro Humboldt University</p>
+          <p class="edu-detail">Foundation in international trade, cross-border commerce, and business strategy — the launchpad for a decade-long global career.</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2023</div>
+          <div class="edu-icon">🌐</div>
+          <h3 class="edu-degree">Basic Web Development</h3>
+          <p class="edu-school">Alpha Institute</p>
+          <p class="edu-detail">Acquired hands-on skills in HTML, CSS, and modern web fundamentals — enabling direct collaboration with technical teams.</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2012 – 2014</div>
+          <div class="edu-icon">🗣️</div>
+          <h3 class="edu-degree">English Proficiency (C1)</h3>
+          <p class="edu-school">Alpha Learning</p>
+          <p class="edu-detail">Achieved professional-level English (C1) enabling fluent communication with international clients, stakeholders, and teams across the U.S. and Europe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Let's Connect</div>
+        <h2 class="section-title">Ready to drive<br /><span class="gold">results together?</span></h2>
+        <p class="section-subtitle">Whether you're building a sales team, scaling operations, or need a strategic leader who can execute — let's talk.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9 2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.09 6.09l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+573003700521">+57 300 370 0521</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Email</span>
+                <a href="mailto:francho714@gmail.com">francho714@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Location</span>
+                <span>Medellín, Colombia</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">LinkedIn</span>
+                <span>Francisco Girón</span>
+              </div>
+            </div>
+          </div>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            <span>Available for new opportunities</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Let's work together" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <div id="formSuccess" class="form-success hidden">
+              Message sent! I'll be in touch shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">FG</div>
+        <p class="footer-tagline">International Business Leader · Medellín, Colombia</p>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#achievements">Results</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2026 Francisco Girón. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
