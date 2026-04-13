@@ -245,28 +245,45 @@
   fills.forEach(f => observer.observe(f));
 })();
 
-/* ---- CONTACT FORM ---- */
+/* ---- CONTACT FORM (mailto handoff) ---- */
 (function initForm() {
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
   if (!form) return;
 
+  const RECIPIENT = 'francho714@gmail.com';
+
   form.addEventListener('submit', e => {
     e.preventDefault();
 
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.querySelector('span').textContent;
-    btn.disabled = true;
-    btn.querySelector('span').textContent = 'Sending...';
+    // Form has `novalidate`, so run the browser's validity check ourselves
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
 
-    // Simulate async send (replace with actual endpoint)
-    setTimeout(() => {
-      form.reset();
-      btn.disabled = false;
-      btn.querySelector('span').textContent = originalText;
-      success.classList.remove('hidden');
-      setTimeout(() => success.classList.add('hidden'), 5000);
-    }, 1200);
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim() || `New message from ${name}`;
+    const message = form.message.value.trim();
+
+    const body =
+      `Name: ${name}\n` +
+      `Email: ${email}\n\n` +
+      `${message}\n`;
+
+    const mailtoUrl =
+      `mailto:${RECIPIENT}` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    // Open the visitor's mail client with the message pre-filled
+    window.location.href = mailtoUrl;
+
+    // Show the confirmation banner and reset the form
+    success.classList.remove('hidden');
+    setTimeout(() => success.classList.add('hidden'), 5000);
+    form.reset();
   });
 })();
 
